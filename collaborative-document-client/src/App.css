@@ -1,0 +1,106 @@
+.collaborateApp {
+  background-color: pink;
+  padding: 22px 0px;
+}
+
+h1 {
+  text-align: center;
+  color: yellowgreen;
+  background-color: rgba(255, 255, 0, 0.164);
+  border: 2px solid yellowgreen;
+}
+
+h5{
+  color: red;
+  margin: 5px 0;
+}
+
+#notification {
+  color: yellowgreen;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 0, 0.164);
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-inline: auto;
+  width: fit-content;
+  margin-top: 20px;
+  border: 2px solid yellowgreen;
+}
+
+.mainBody {
+  display: flex;
+  gap: 50px;
+  margin: 25px 50px;
+  color: green;
+}
+
+.form {
+  flex: 1;
+}
+
+.textArea {
+  width: 100%;
+  height: 70vh;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: yellowgreen;
+  border: 2px solid yellowgreen;
+  border-radius: 10px;
+}
+
+.textArea:focus,
+#roomInput:focus,
+.userName:focus {
+  outline: none;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+.changeDoc {
+  flex: 1;
+  border: 2px solid yellowgreen;
+  border-radius: 10px;
+  height: 70vh;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 45px;
+  background-color: white;
+  color: yellowgreen;
+}
+
+#roomInput,
+.userName {
+  color: green;
+  background-color: whitesmoke;
+  border: 1.5px solid green;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#button {
+  color: green;
+  background-color: whitesmoke;
+  border: 1.5px solid green;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 760px) {
+  .mainBody {
+    display: block;
+  }
+
+  .inputs {
+    display: block;
+  }
+}
