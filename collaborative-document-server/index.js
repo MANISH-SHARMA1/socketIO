@@ -14,10 +14,6 @@ const io = socketIO(server, {
 
 io.use((socket, next) => {
   const token = socket.handshake.auth.token;
-
-  const buffer = Buffer.from("Hello, world!");
-  const base64String = buffer.toString("base64");
-  console.log(base64String);
   next();
 });
 
